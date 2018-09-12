@@ -1,0 +1,19 @@
+{
+  "name": "smm-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.205.0",
+    "ejs": "^2.5.8",
+    "mongodb": "^3.0.5",
+    "node-readfiles": "^0.2.0",
+    "nodemailer": "^4.6.3",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "request-debug": "^0.2.0",
+    "request-promise": "^4.2.2",
+    "twitter-stream-api": "^0.5.2"
+  }
+}

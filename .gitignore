@@ -1,0 +1,7 @@
+monitor/node_modules/
+webapp/frontend/node_modules/
+webapp/backend/node_modules
+webapp/frontend/build
+evolveDB/node_modules/
+.DS_Store
+.idea/

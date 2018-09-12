@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script src=bundle.min.js></script>
+  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+ </head>
+ <body>
+   <img id='logo' src='/media/sparta-logo.png'>
+   <div id='control-wrapper'>
+      <div style='padding:20px;' id='sentiment-section'>
+        <select id='sentiment-list'></select>
+      </div>
+      <div style='padding:20px;' id='phrase-section'>
+        <select id='phrase-list'></select>
+      </div>
+      <div style='padding:20px;' id='entity-section'>
+        <select id='entity-list'></select>
+      </div>
+      <div style='padding:20px;' id='entity-type-section'>
+        <select id='entity-type-list'></select>
+      </div>
+   <div>
+     <button id='search'>Search</button>
+   </div>
+  </div>
+  <hr />
+  <div id='results'>
+  </div>
+ </body>
+</html>

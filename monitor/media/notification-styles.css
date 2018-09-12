@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+}
+
+#header-wrapper {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid gray;
+}
+
+#app-logo {
+  display: block;
+  padding: 1em;
+  margin: 1em;
+}
+#greeting-wrapper {
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid gray;
+}
+
+#message-wrapper {
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid gray;
+}
+
+#message {
+  display: block;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid gray;
+}
+
+#code {
+  display: block;
+  color: #ff8c00;
+}
+
+#footer {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid gray;
+}

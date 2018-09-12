@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="cid:notification-styles">
+</head>
+<body>
+
+  <section id='header-wrapper'>
+    <img id='app-logo' src='cid:app-logo'>
+    <article id='header'>{header}</article>
+  </section>
+
+  <section id='greeting-wrapper'>
+    <article id='greeting'>Hello <%= firstName %> <%= lastName %></article>
+  </section>
+
+  <section id='message-wrapper'>
+   <article id='message'>
+     We found this tweet for you because if matched your keywords (<%= match.keywords %>):
+   </article>
+   <pre id='code'>
+      <%= tweetJson %>
+   </pre>
+  </section>
+
+  <section id='footer-wrapper'>
+    <article id='footer'>{footer}</article>
+  </section>
+
+</body>
+</html>

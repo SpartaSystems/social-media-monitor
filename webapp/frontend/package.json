@@ -1,0 +1,27 @@
+{
+  "name": "smm-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "mkbuild": "mkdir -p build",
+    "copy-static": "npm run mkbuild && cp resources/static/index.html build/",
+    "copy-media": "npm run mkbuild && mkdir -p build/media && cp -r src/media/* build/media",
+    "build": "npm run copy-static && npm run copy-media && webpack",
+    "serve": "cd build && python -m SimpleHTTPServer 8000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser-json": "^1.9.2",
+    "css-loader": "^0.28.11",
+    "jquery": "^3.3.1",
+    "select2": "^4.0.6-rc.1",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.5.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.14"
+  }
+}

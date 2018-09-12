@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <section id='header'>
+    <img id='app-logo' src='cid:app-logo'>
+    {header}
+  </section>
+
+  <section id='greeting'>
+  Hello <%= firstName %> <%= lastName %>
+  </section>
+
+  <section id='message'>
+   <article id='verbage'>
+     We found this neutral sentiment tweet for you because you asked to see tweets like this:
+   </article>
+   <pre id='code'>
+      <%= tweetJson %>
+   </pre>
+  </section>
+
+  <section id='footer'>
+    {footer}
+  </section>
+
+</body>
+</html>

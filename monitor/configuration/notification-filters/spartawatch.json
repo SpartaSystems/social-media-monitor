@@ -1,0 +1,15 @@
+{
+    "_id": "spartawatch",
+    "name": "hashtag spartawatch",
+    "type": "keywords",
+    "to": [{
+      "firstName": "John",
+      "lastName": "Doe",
+      "address": "john.doe@yourdomain.com"
+    },{
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "address": "jane.doe@yourdomain.com"
+    }],
+    "keywords": ["#spartawatch"]
+}
