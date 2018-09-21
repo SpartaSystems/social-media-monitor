@@ -34,8 +34,9 @@ Depending on how you run the backend you may need to adjust [BaseService.js](web
 
 
 # Deployment
-- The deployment script (deploy.sh) relies on a .pem file in the root of the project.
-- The deployment scripts expects to find the file [update_creds.sh](update_creds.sh) in the directory directly above this repository. This file updates the credentials in aws.json and twitter.js so that you don't have to manually enter the creds on the server every time you deploy.
+- The [deployment script](deploy.sh) relies on there being a .pem file in the root of the project.
+- The deployment script expects to find the file [update_creds.sh](update_creds.sh) in the directory directly above this repository. This file updates the credentials in aws.json and twitter.js so that you don't have to manually enter the creds on the server every time you deploy.
 - `./update_creds.sh (-h|-d|-c)`
+  - -h : help message
   - -d : deploy latest master branch to production
   - -c : update config files with credentials (not stored in vcs)
