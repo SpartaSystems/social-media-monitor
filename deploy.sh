@@ -1,8 +1,8 @@
 #!/bin/bash
 
 user=ubuntu
-host=ec2-18-216-165-204.us-east-2.compute.amazonaws.com
-repo=ssh://git@bitbucket.spartasystems.com:7999/innov/smm.git
+host=ec2-xx-xxx-xxx-xxx.us-east-1.compute.amazonaws.com
+repo=git@github.com:SpartaSystems/social-media-monitor.git
 script_dir=$(dirname $0)
 temp=orion
 source ${script_dir}/../update_creds.sh # contains update_creds() to update credential files
