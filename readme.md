@@ -1,6 +1,6 @@
-This project contains two main components.
-1. The actual social media monitor that collects configured social media events
-2. A web based user interface to browse the collected data. The webapp itself is made of a backend component and a frontend component.
+This project contains two main components:
+1. The actual [monitor](monitor) that collects configured social media events.
+2. A web based user interface to browse the collected data. The [webapp](webapp) is made of a [backend](webapp/backend/) component and a [frontend](webapp/frontend/) component.
 
 
 # Monitor
@@ -16,19 +16,26 @@ This project contains two main components.
 - For each filter type configure a corresponding email [notification template](monitor/src/templates/notifications)
 - Logo and css styling for the email templates should go in the [media folder](monitor/media/)
 
-## Runtime
-shell$ node index.js
+### Runtime
+`node index.js`
 
 
 
 # Webapp
 
 ## Backend Rest Service
-- shell$ npm start
+`npm start` will run the app on port 3000
 
 ## Frontend
-- shell$ npm run build
+`npm run build` will build the ui and put it in a build/ directory. Configure your http directives to direct port 80 at this folder.
+
+When running locally you can use `npm run serve` to serve the build directory on port 8000.
+Depending on how you run the backend you may need to adjust [BaseService.js](webapp/frontend/src/services/BaseService.js) to direct rest calls to the appropriate mount point for your backend.
 
 
 # Deployment
-- The deploy script (deploy.sh) relies on a .pem file in the root of the project.
+- The deployment script (deploy.sh) relies on a .pem file in the root of the project.
+- The deployment scripts expects to find the file [update_creds.sh](update_creds.sh) in the directory directly above this repository. This file updates the credentials in aws.json and twitter.js so that you don't have to manually enter the creds on the server every time you deploy.
+- `./update_creds.sh (-h|-d|-c)`
+  - -d : deploy latest master branch to production
+  - -c : update config files with credentials (not stored in vcs)
