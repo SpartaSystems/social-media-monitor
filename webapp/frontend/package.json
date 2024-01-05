@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^1.6.4",
     "body-parser-json": "^1.9.2",
     "css-loader": "^0.28.11",
     "jquery": "^3.3.1",
