@@ -13,7 +13,7 @@
     "nodemailer": "^4.6.8",
     "nodemailer-smtp-transport": "^2.7.4",
     "request-debug": "^0.2.0",
-    "request-promise": "^4.2.2",
+    "request-promise": "^4.2.6",
     "twitter-stream-api": "^0.5.2"
   }
 }
